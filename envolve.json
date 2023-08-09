@@ -1,0 +1,79 @@
+{
+    "InputParameters": {
+        "PayorName": "Envolve",
+        "PayorId": 0,
+        "ClientId": "88b80500-d5a9-4c40-a753-34e43695c69e",
+        "AppName": "Eligibility",
+        "RcmClaimNumber": "234378",
+        "RcmClinicId": "41e9bf05-7b4c-46ac-8d15-8cfecd970297",
+        "WebsiteId":"ENVOLVE_001"
+    },
+    "PatientData": [
+        {   "DateOfService":"06/30/2023",
+            "LastName": "Malone",
+            "BirthDate": "07/21/2005",
+            "SubscriberId": "E37907957",
+            "EligibilityVerificationId": 14397,
+            "PatientId": "",
+            "AppointmentId": "",
+            "LastName": "Malone",
+            "FirstName": "Jeremiah",
+            "Relationship": "Dependent",
+            "PatientMemberId": "E37907957",
+            "SubscriberFirstName": "Damian",
+            "SubscriberLastName": "Nielsen",
+            "SubscriberBirthDate": "07/17/1984",
+            "ClinicServerId": "8d9d8527-8ee6-4697-8f41-4415ca6a26c0",
+            "ClinicNum": "3"
+
+        }
+    ],
+    "Login": {
+        "Url": "https://pwp.envolvedental.com/PWP/Landing",
+        "LoginId": "BPKCDC2",
+        "Password": "Smiles2022#",
+        "OtpRequired": false,
+        "OtpEmail": ""
+    },
+    "Xpaths": [
+        {
+            "Id": 16,
+            "ClientId": null,
+            "EligibilityPayorInfoId": 12,
+            "DataContextId": 196,
+            "XPath": "{\"DataContextId\":\"1\",\"DataContextName\":\"EligibilityLogin\",\"Click\":null,\"Xpaths\":[{\"UsernameXpath\":\"//*[@id='UserName']\",\"PasswordXpath\":\"//*[@id='Password']\",\"LoginButtonXpath\":\"//*[@id='LoginBlockButton']\",\"OtpInputXpath\":\"\",\"OtpSubmitXpath\":\"\",\"PreSteps\":[],\"PostSteps\":[],\"OtpXpath\":\"\",\"OtpRequired\":false,\"OtpInstructions\":{\"OtpEmail\":\"payorportal@sdbmail.com\",\"OtpEamilPassword\":\"\",\"FromEmail\":\"\",\"EmailTitle\":\"\",\"tenantID\":\"e44873dc-54c1-425a-8c70-6bd6ee571de4\",\"clientID\":\"aa33b5af-9a5a-4cb3-b120-2b831663f414\",\"clientSecret\":\"K.g8Q~W6gjw-xk4IE67XzTeA7X2FIcF2ecoyJcnq\",\"SMTPAddress\":\"\",\"EncryptionType\":\"\",\"ImapType\":\"\",\"OtpWait\":5}}]}",
+            "IsActive": true,
+            "DataContextName": "EligibilityLogin",
+            "ProductCategoryId": 0
+        },      
+        {
+            "Id": 20,
+            "ClientId": null,
+            "EligibilityPayorInfoId": 12,
+            "DataContextId": 177,
+            "XPath": "{\"FilesToBlob\":false,\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[\"//button[@ng-click='closeMemberActionDialog()']\"],\"AfterClickWait\":2,\"fileds\":[],\"FullScreenShot\":true},\"xpath\":\"\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"SubscriberId\"},\"xpath\":\"//tr[./td[contains(text(),'%s')] and ./td[contains(text(),'%s')]]/td[1]!@FullName!@BirthDate\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"PatientName/Address\"},\"xpath\":\"//tr[./td[contains(text(),'%s')] and ./td[contains(text(),'%s')]]/td[2]!@FullName!@BirthDate\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"DoB\"},\"xpath\":\"//tr[./td[contains(text(),'%s')] and ./td[contains(text(),'%s')]]/td[3]!@FullName!@BirthDate\"},{\"AdditonalInfo\":{\"Click\":[\"//tr[./td[contains(text(),'%s')] and ./td[contains(text(),'%s')]]/td[7]!@FullName!@BirthDate\"],\"fileds\":[],\"AfterClickWait\":3,\"FullScreenShot\":true},\"xpath\":\"\"},{\"AdditonalInfo\":{\"Click\":[\"//*[@id='ViewEligReportButton']\"],\"fileds\":[],\"AfterClickWait\":10},\"xpath\":\"\"},{\"AdditonalInfo\":{\"Click\":[\"//*[@id='ViewPatientHistoryButton']\"],\"fileds\":[],\"windowChange\":1,\"window_print\":true,\"AfterClickWait\":15},\"xpath\":\"\"},{\"AdditonalInfo\":{\"Click\":[\"//*[@id='ReportViewer_ctl09_ctl04_ctl00_ButtonImg']\",\"//*[@id='ReportViewer_ctl09_ctl04_ctl00_Menu']/div[4]/a\"],\"fileds\":[],\"windowChange\":1,\"window_print\":true,\"AfterClickWait\":5},\"xpath\":\"\"}]}",
+            "IsActive": true,
+            "DataContextName": "EligibilityPatientVerfication",
+            "ProductCategoryId": 2
+        },
+        {
+            "Id": 20,
+            "ClientId": null,
+            "EligibilityPayorInfoId": 12,
+            "DataContextId": 177,
+            "XPath": "{\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[\"//button[@ng-click='closeMemberActionDialog()']\"],\"fileds\":[]},\"xpath\":\"\"}]}",
+            "IsActive": true,
+            "DataContextName": "SearchDashboardFilter",
+            "ProductCategoryId": 2
+        }
+    ],
+    "SearchParameters": [
+        {
+            "Id": 2,
+            "EligibilityPayorInfoId": 12,
+            "JsonSettings": "{\"Search\":{\"Settings\":{\"PreSteps\":{\"Clicks\":[\"//input[contains(@value,'4')]\"],\"sleep\":2,\"AdditonalInfo\":{\"aftersleep\":3}},\"SearchButtonXpath\":\"//*[@id='VerifyButton']\",\"PostSteps\":{\"Clicks\":[],\"sleep\":5,\"AdditonalInfo\":{\"aftersleep\":1}}},\"Queries\":[{\"Data\":\"DateOfService\",\"Xpath\":\"//*[@id='DateOfServiceTextBox']\"},{\"Data\":\"LastName\",\"Xpath\":\"//*[@id='LastName4TextBox']\"},{\"Data\":\"BirthDate\",\"Xpath\":\"//*[@id='DateOfBirth4TextBox']\"}]}}",
+            "IsActive": true,
+            "ProductCategoryId": 2
+        }
+    ]
+  }
